@@ -22,6 +22,9 @@ class drv_pkt extends uvm_driver#(pkt);
 	    `uvm_info("CMD Driver", "got clk and driving cmd and data to interface", UVM_HIGH);
 	    top.intf_bus_0.cmd = req.cmd;
 	    top.intf_bus_0.saddr = req.saddr;
+	    `uvm_info("CMD Driver", $sformatf("cmd is %0h \n", top.intf_bus_0.cmd), UVM_LOW);	   
+	    `uvm_info("CMD Driver", $sformatf("saddr is %0h \n", top.intf_bus_0.saddr), UVM_LOW);	   
+
 	    // @(top.intf_bus_0.clk);
 	    `uvm_info("CMD Driver", "waiting for clk #2", UVM_HIGH);
 	    repeat(4) @(top.intf_bus_0.cb_driver);

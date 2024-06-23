@@ -1,6 +1,29 @@
-Error-[NOA] Null object access
-/usr/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.1/tlm1/uvm_sqr_connections.svh, 45
-  The object at dereference depth 1 is being used before it was 
-  constructed/allocated.
-  Please make sure that the object is allocated before using it. 
+Virtual Sequence:
+   1) holds all sequences in one place (seq_rst, seq_pkt_rx, seq_pkt_tx, seq_wb)
+   2) synchronizes execution of these sequences  in task body(), using `uvm_do_on
+   3) but relies on a "virtual sequencer" to hold all sequencers (at least 1 per agent) 
+      in one place... easily know where to send the sequences to
+   4) virtual sequence uses a special macro "p_sequencer" to pre-declare vitual sequencers
+   5) interestingly, "virtual sequence" is a user chosen name, and inherits from "uvm_sequence"
+   6) maybe a another name should be "Sequence Commander" or "Pacman"
+
+Virtual Sequencer:
+   1) holds all sequencers in one place (seqr_rst, seqr_pkt_rx, seqr_pkt_tx, seqr_wb)
+   2) but sequencers are really located in their respective agents (agent_rst contains
+      seqr_rst, etc), using 
+   3) a little more special than virtual sequence - because it inherits from uvm_sequencer 
+      instead of plain "uvm_sequence"
+  
+
+Virtual Sequencer coordiantes between 
+   Sequence RST
+   Sequence PKT
+
+UVM_INFO drv_rst.sv(17) @ 0: uvm_test_top.env_0.agent_rst_0.drv_rst_0 [RST Driver] About to drive
+UVM_INFO drv_rst.sv(23) @ 5: uvm_test_top.env_0.agent_rst_0.drv_rst_0 [RST Driver] got clk
+UVM_INFO drv_rst.sv(28) @ 20: uvm_test_top.env_0.agent_rst_0.drv_rst_0 [RST Driving!] 
+UVM_INFO drv_pkt.sv(22) @ 25: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and driving cmd and data to interface
+$finish at simulation time                  635
+
+
 

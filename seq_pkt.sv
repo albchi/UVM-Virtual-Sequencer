@@ -8,9 +8,12 @@ class seq_pkt extends uvm_sequence#(pkt);
    `uvm_object_utils(seq_pkt)
 
     virtual task body();
-          `uvm_info("XAC", "in sequence body creating ", UVM_HIGH);
+
+          `uvm_info("XAC", "SEQ_PKT::body(), going to uvm_do_with", UVM_HIGH);
+
           `uvm_do_with(req, {saddr == 16'h1111; daddr == 888; rw_== 0;})
           `uvm_do_with(req, {saddr == 16'h1111; daddr == 888; rw_== 1;})       
+
           `uvm_info("XAC", "in sequence body, after 1st uvm_do_with ", UVM_HIGH);
 
           `uvm_do_with(req, {saddr == 16'h2222; daddr == 888;})
