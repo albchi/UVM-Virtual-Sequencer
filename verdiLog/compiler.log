@@ -1,0 +1,9 @@
+*design* DebussyLib (btIdent Verdi_U-2023.03-SP2-2)
+Command arguments:  -elab  /home/sf10274/AlbertLand/0UVMgetinfo/VirtualSequencerTheOne/simv.daidir/kdb.elab++  +UVM_TESTNAME=testcase_wb 
+*design* DebussyLib (btIdent Verdi_U-2023.03-SP2-2)
+
+*Warning* failed to find class testcase_wb (+OVM_TESTNAME/UVM_TESTNAME=testcase_wb) 
+or class testcase_wb is not inherited from class ovm_test/uvm_test of package ovm_pkg/uvm_pkg
+
+
+Total	0 error(s),   1 warning(s)

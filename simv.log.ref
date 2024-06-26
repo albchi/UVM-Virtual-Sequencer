@@ -1,0 +1,926 @@
+Command: /home/sf10274/AlbertLand/0UVMgetinfo/VirtualSequencerTheOne/./simv -l simv.log +UVM_VERBOSITY=HIGH +UVM_TESTNAME=testcase1
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03-SP2_Full64; Runtime version U-2023.03-SP2_Full64;  Jun 26 10:11 2024
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+*Verdi* Loading libsscore_vcs202303.so
+FSDB Dumper for VCS, Release Verdi_U-2023.03-SP2-2, Linux x86_64/64bit, 11/22/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+UVM_INFO @ 0: reporter [RNTST] Running test testcase1...
+UVM_INFO drv_rst.sv(17) @ 0: uvm_test_top.env_0.agent_rst_0.drv_rst_0 [RST Driver] About to drive
+UVM_INFO v_seq.sv(24) @ 0: uvm_test_top.v_seqr_0@@v_seq [XAC] v_seq::pre_start
+UVM_INFO seq_rst.sv(41) @ 0: uvm_test_top.env_0.agent_rst_0.seqr_rst_0@@v_seq.seq_rst_0 [XAC] seq_rst::pre_start
+UVM_INFO seq_rst.sv(14) @ 0: uvm_test_top.env_0.agent_rst_0.seqr_rst_0@@v_seq.seq_rst_0 [XAC] in rst sequence sequence body
+UVM_INFO drv_rst.sv(23) @ 0: uvm_test_top.env_0.agent_rst_0.drv_rst_0 [RST Driver] waiting for clk
+UVM_INFO drv_rst.sv(31) @ 15: uvm_test_top.env_0.agent_rst_0.drv_rst_0 [RST Driver] rst_ is 0 
+
+UVM_INFO drv_rst.sv(37) @ 45: uvm_test_top.env_0.agent_rst_0.drv_rst_0 [RST Driver] rst_ is 1 
+
+UVM_INFO seq_rst.sv(49) @ 45: uvm_test_top.env_0.agent_rst_0.seqr_rst_0@@v_seq.seq_rst_0 [XAC] seq_rst::post_start
+UVM_INFO seq_pkt.sv(37) @ 145: uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0@@v_seq.seq_pkt_0 [XAC] seq_pkt::pre_start
+UVM_INFO seq_pkt.sv(12) @ 145: uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0@@v_seq.seq_pkt_0 [XAC] SEQ_PKT::body(), going to do uvm_do_with for the 1st time
+UVM_INFO drv_pkt.sv(19) @ 145: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 155: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 155: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] ----------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                    
+----------------------------------------------------------------------------------------
+req                            pkt       -     @987                                     
+  saddr                        integral  16    'hbeef                                   
+  daddr                        integral  16    'h9068                                   
+  data                         integral  4     'hd                                      
+  cmd                          integral  4     'h0                                      
+  rw_                          integral  1     'h0                                      
+  rst                          integral  1     'h0                                      
+  rst_time                     integral  32    'h6bc9a3f5                               
+  hold_len                     integral  32    'h3                                      
+  begin_time                   time      64    145                                      
+  depth                        int       32    'd3                                      
+  parent sequence (name)       string    9     seq_pkt_0                                
+  parent sequence (full name)  string    37    uvm_test_top.v_seqr_0.v_seq.seq_pkt_0    
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0
+----------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 160: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 0 
+
+UVM_INFO drv_pkt.sv(34) @ 160: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is beef 
+
+UVM_INFO drv_pkt.sv(35) @ 160: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is x 
+
+UVM_INFO drv_pkt.sv(36) @ 160: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 165: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 0 
+
+UVM_INFO drv_pkt.sv(43) @ 165: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is beef 
+
+UVM_INFO drv_pkt.sv(44) @ 165: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is x 
+
+UVM_INFO drv_pkt.sv(45) @ 165: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 200: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 0 
+
+UVM_INFO drv_pkt.sv(53) @ 200: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is beef 
+
+UVM_INFO drv_pkt.sv(54) @ 200: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 200: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 205: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 0 
+
+UVM_INFO drv_pkt.sv(61) @ 205: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is beef 
+
+UVM_INFO drv_pkt.sv(62) @ 205: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 205: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(19) @ 205: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 215: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 215: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] ----------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                    
+----------------------------------------------------------------------------------------
+req                            pkt       -     @992                                     
+  saddr                        integral  16    'hfade                                   
+  daddr                        integral  16    'hd309                                   
+  data                         integral  4     'ha                                      
+  cmd                          integral  4     'h1                                      
+  rw_                          integral  1     'h0                                      
+  rst                          integral  1     'h0                                      
+  rst_time                     integral  32    'hc32fad8f                               
+  hold_len                     integral  32    'h7                                      
+  begin_time                   time      64    205                                      
+  depth                        int       32    'd3                                      
+  parent sequence (name)       string    9     seq_pkt_0                                
+  parent sequence (full name)  string    37    uvm_test_top.v_seqr_0.v_seq.seq_pkt_0    
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0
+----------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 220: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 1 
+
+UVM_INFO drv_pkt.sv(34) @ 220: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is fade 
+
+UVM_INFO drv_pkt.sv(35) @ 220: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 220: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 225: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 1 
+
+UVM_INFO drv_pkt.sv(43) @ 225: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is fade 
+
+UVM_INFO drv_pkt.sv(44) @ 225: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 225: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 300: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 1 
+
+UVM_INFO drv_pkt.sv(53) @ 300: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is fade 
+
+UVM_INFO drv_pkt.sv(54) @ 300: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 300: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 305: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 1 
+
+UVM_INFO drv_pkt.sv(61) @ 305: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is fade 
+
+UVM_INFO drv_pkt.sv(62) @ 305: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 305: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(19) @ 305: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 315: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 315: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] ----------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                    
+----------------------------------------------------------------------------------------
+req                            pkt       -     @996                                     
+  saddr                        integral  16    'hd00d                                   
+  daddr                        integral  16    'h378                                    
+  data                         integral  4     'h7                                      
+  cmd                          integral  4     'h2                                      
+  rw_                          integral  1     'h0                                      
+  rst                          integral  1     'h0                                      
+  rst_time                     integral  32    'h6f67de5b                               
+  hold_len                     integral  32    'h5                                      
+  begin_time                   time      64    305                                      
+  depth                        int       32    'd3                                      
+  parent sequence (name)       string    9     seq_pkt_0                                
+  parent sequence (full name)  string    37    uvm_test_top.v_seqr_0.v_seq.seq_pkt_0    
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0
+----------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 320: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 2 
+
+UVM_INFO drv_pkt.sv(34) @ 320: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is d00d 
+
+UVM_INFO drv_pkt.sv(35) @ 320: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 320: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 325: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 2 
+
+UVM_INFO drv_pkt.sv(43) @ 325: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is d00d 
+
+UVM_INFO drv_pkt.sv(44) @ 325: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 325: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 380: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 2 
+
+UVM_INFO drv_pkt.sv(53) @ 380: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is d00d 
+
+UVM_INFO drv_pkt.sv(54) @ 380: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 380: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 385: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 2 
+
+UVM_INFO drv_pkt.sv(61) @ 385: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is d00d 
+
+UVM_INFO drv_pkt.sv(62) @ 385: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 385: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(19) @ 385: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 395: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 395: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] ----------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                    
+----------------------------------------------------------------------------------------
+req                            pkt       -     @1000                                    
+  saddr                        integral  16    'h1                                      
+  daddr                        integral  16    'h378                                    
+  data                         integral  4     'h4                                      
+  cmd                          integral  4     'h3                                      
+  rw_                          integral  1     'h1                                      
+  rst                          integral  1     'h0                                      
+  rst_time                     integral  32    'h4d13faf8                               
+  hold_len                     integral  32    'h7                                      
+  begin_time                   time      64    385                                      
+  depth                        int       32    'd3                                      
+  parent sequence (name)       string    9     seq_pkt_0                                
+  parent sequence (full name)  string    37    uvm_test_top.v_seqr_0.v_seq.seq_pkt_0    
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0
+----------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 400: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 3 
+
+UVM_INFO drv_pkt.sv(34) @ 400: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 1 
+
+UVM_INFO drv_pkt.sv(35) @ 400: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 400: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 405: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 3 
+
+UVM_INFO drv_pkt.sv(43) @ 405: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 1 
+
+UVM_INFO drv_pkt.sv(44) @ 405: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 405: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 480: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 3 
+
+UVM_INFO drv_pkt.sv(53) @ 480: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 1 
+
+UVM_INFO drv_pkt.sv(54) @ 480: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 480: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 485: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 3 
+
+UVM_INFO drv_pkt.sv(61) @ 485: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 1 
+
+UVM_INFO drv_pkt.sv(62) @ 485: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 485: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO seq_pkt.sv(20) @ 485: uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0@@v_seq.seq_pkt_0 [XAC] in sequence body, after 1st uvm_do_with 
+UVM_INFO drv_pkt.sv(19) @ 485: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 495: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 495: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] ----------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                    
+----------------------------------------------------------------------------------------
+req                            pkt       -     @1004                                    
+  saddr                        integral  16    'h2222                                   
+  daddr                        integral  16    'hcafe                                   
+  data                         integral  4     'h4                                      
+  cmd                          integral  4     'h4                                      
+  rw_                          integral  1     'h0                                      
+  rst                          integral  1     'h1                                      
+  rst_time                     integral  32    'h4db79241                               
+  hold_len                     integral  32    'h9                                      
+  begin_time                   time      64    485                                      
+  depth                        int       32    'd3                                      
+  parent sequence (name)       string    9     seq_pkt_0                                
+  parent sequence (full name)  string    37    uvm_test_top.v_seqr_0.v_seq.seq_pkt_0    
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0
+----------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 500: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 4 
+
+UVM_INFO drv_pkt.sv(34) @ 500: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 2222 
+
+UVM_INFO drv_pkt.sv(35) @ 500: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 500: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 505: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 4 
+
+UVM_INFO drv_pkt.sv(43) @ 505: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 2222 
+
+UVM_INFO drv_pkt.sv(44) @ 505: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 505: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 600: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 4 
+
+UVM_INFO drv_pkt.sv(53) @ 600: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 2222 
+
+UVM_INFO drv_pkt.sv(54) @ 600: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 600: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 605: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 4 
+
+UVM_INFO drv_pkt.sv(61) @ 605: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 2222 
+
+UVM_INFO drv_pkt.sv(62) @ 605: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 605: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(19) @ 605: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 615: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 615: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] ----------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                    
+----------------------------------------------------------------------------------------
+req                            pkt       -     @1008                                    
+  saddr                        integral  16    'h3333                                   
+  daddr                        integral  16    'hbeef                                   
+  data                         integral  4     'he                                      
+  cmd                          integral  4     'h5                                      
+  rw_                          integral  1     'h0                                      
+  rst                          integral  1     'h1                                      
+  rst_time                     integral  32    'h84dc7a5b                               
+  hold_len                     integral  32    'h6                                      
+  begin_time                   time      64    605                                      
+  depth                        int       32    'd3                                      
+  parent sequence (name)       string    9     seq_pkt_0                                
+  parent sequence (full name)  string    37    uvm_test_top.v_seqr_0.v_seq.seq_pkt_0    
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0
+----------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 620: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 5 
+
+UVM_INFO drv_pkt.sv(34) @ 620: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 3333 
+
+UVM_INFO drv_pkt.sv(35) @ 620: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 620: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 625: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 5 
+
+UVM_INFO drv_pkt.sv(43) @ 625: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 3333 
+
+UVM_INFO drv_pkt.sv(44) @ 625: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 625: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 690: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 5 
+
+UVM_INFO drv_pkt.sv(53) @ 690: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 3333 
+
+UVM_INFO drv_pkt.sv(54) @ 690: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 690: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 695: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 5 
+
+UVM_INFO drv_pkt.sv(61) @ 695: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 3333 
+
+UVM_INFO drv_pkt.sv(62) @ 695: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 695: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(19) @ 695: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 705: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 705: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] ----------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                    
+----------------------------------------------------------------------------------------
+req                            pkt       -     @1012                                    
+  saddr                        integral  16    'h4444                                   
+  daddr                        integral  16    'hfeed                                   
+  data                         integral  4     'h0                                      
+  cmd                          integral  4     'h6                                      
+  rw_                          integral  1     'h0                                      
+  rst                          integral  1     'h1                                      
+  rst_time                     integral  32    'h63f93544                               
+  hold_len                     integral  32    'h5                                      
+  begin_time                   time      64    695                                      
+  depth                        int       32    'd3                                      
+  parent sequence (name)       string    9     seq_pkt_0                                
+  parent sequence (full name)  string    37    uvm_test_top.v_seqr_0.v_seq.seq_pkt_0    
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0
+----------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 710: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 6 
+
+UVM_INFO drv_pkt.sv(34) @ 710: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 4444 
+
+UVM_INFO drv_pkt.sv(35) @ 710: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 710: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 715: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 6 
+
+UVM_INFO drv_pkt.sv(43) @ 715: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 4444 
+
+UVM_INFO drv_pkt.sv(44) @ 715: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 715: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 770: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 6 
+
+UVM_INFO drv_pkt.sv(53) @ 770: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 4444 
+
+UVM_INFO drv_pkt.sv(54) @ 770: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 770: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 775: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 6 
+
+UVM_INFO drv_pkt.sv(61) @ 775: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 4444 
+
+UVM_INFO drv_pkt.sv(62) @ 775: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 775: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(19) @ 775: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 785: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 785: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] ----------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                    
+----------------------------------------------------------------------------------------
+req                            pkt       -     @1016                                    
+  saddr                        integral  16    'h5555                                   
+  daddr                        integral  16    'hfade                                   
+  data                         integral  4     'h1                                      
+  cmd                          integral  4     'h7                                      
+  rw_                          integral  1     'h0                                      
+  rst                          integral  1     'h0                                      
+  rst_time                     integral  32    'h24114ddf                               
+  hold_len                     integral  32    'h6                                      
+  begin_time                   time      64    775                                      
+  depth                        int       32    'd3                                      
+  parent sequence (name)       string    9     seq_pkt_0                                
+  parent sequence (full name)  string    37    uvm_test_top.v_seqr_0.v_seq.seq_pkt_0    
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0
+----------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 790: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 7 
+
+UVM_INFO drv_pkt.sv(34) @ 790: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 5555 
+
+UVM_INFO drv_pkt.sv(35) @ 790: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 790: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 795: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 7 
+
+UVM_INFO drv_pkt.sv(43) @ 795: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 5555 
+
+UVM_INFO drv_pkt.sv(44) @ 795: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 795: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 860: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 7 
+
+UVM_INFO drv_pkt.sv(53) @ 860: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 5555 
+
+UVM_INFO drv_pkt.sv(54) @ 860: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 860: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 865: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 7 
+
+UVM_INFO drv_pkt.sv(61) @ 865: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 5555 
+
+UVM_INFO drv_pkt.sv(62) @ 865: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 865: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO seq_pkt.sv(44) @ 865: uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0@@v_seq.seq_pkt_0 [XAC] seq_pkt::post_start
+UVM_INFO v_seq.sv(31) @ 865: uvm_test_top.v_seqr_0@@v_seq [XAC] v_seq::post_start
+UVM_INFO seq_pkt.sv(37) @ 865: uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0@@seq_pkt_0 [XAC] seq_pkt::pre_start
+UVM_INFO seq_pkt.sv(12) @ 865: uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0@@seq_pkt_0 [XAC] SEQ_PKT::body(), going to do uvm_do_with for the 1st time
+UVM_INFO drv_pkt.sv(19) @ 865: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 875: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 875: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] --------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                              
+--------------------------------------------------------------------------------------------------
+req                            pkt       -     @1057                                              
+  saddr                        integral  16    'hbeef                                             
+  daddr                        integral  16    'hacd6                                             
+  data                         integral  4     'he                                                
+  cmd                          integral  4     'h0                                                
+  rw_                          integral  1     'h0                                                
+  rst                          integral  1     'h0                                                
+  rst_time                     integral  32    'hb44cf3bf                                         
+  hold_len                     integral  32    'h3                                                
+  begin_time                   time      64    865                                                
+  depth                        int       32    'd2                                                
+  parent sequence (name)       string    9     seq_pkt_0                                          
+  parent sequence (full name)  string    51    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0.seq_pkt_0
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0          
+--------------------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 880: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 0 
+
+UVM_INFO drv_pkt.sv(34) @ 880: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is beef 
+
+UVM_INFO drv_pkt.sv(35) @ 880: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 880: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 885: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 0 
+
+UVM_INFO drv_pkt.sv(43) @ 885: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is beef 
+
+UVM_INFO drv_pkt.sv(44) @ 885: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 885: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 920: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 0 
+
+UVM_INFO drv_pkt.sv(53) @ 920: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is beef 
+
+UVM_INFO drv_pkt.sv(54) @ 920: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 920: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 925: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 0 
+
+UVM_INFO drv_pkt.sv(61) @ 925: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is beef 
+
+UVM_INFO drv_pkt.sv(62) @ 925: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 925: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(19) @ 925: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 935: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 935: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] --------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                              
+--------------------------------------------------------------------------------------------------
+req                            pkt       -     @1061                                              
+  saddr                        integral  16    'hfade                                             
+  daddr                        integral  16    'h1d9a                                             
+  data                         integral  4     'hc                                                
+  cmd                          integral  4     'h1                                                
+  rw_                          integral  1     'h0                                                
+  rst                          integral  1     'h1                                                
+  rst_time                     integral  32    'h6b1a6d4f                                         
+  hold_len                     integral  32    'h6                                                
+  begin_time                   time      64    925                                                
+  depth                        int       32    'd2                                                
+  parent sequence (name)       string    9     seq_pkt_0                                          
+  parent sequence (full name)  string    51    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0.seq_pkt_0
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0          
+--------------------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 940: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 1 
+
+UVM_INFO drv_pkt.sv(34) @ 940: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is fade 
+
+UVM_INFO drv_pkt.sv(35) @ 940: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 940: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 945: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 1 
+
+UVM_INFO drv_pkt.sv(43) @ 945: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is fade 
+
+UVM_INFO drv_pkt.sv(44) @ 945: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 945: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 1010: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 1 
+
+UVM_INFO drv_pkt.sv(53) @ 1010: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is fade 
+
+UVM_INFO drv_pkt.sv(54) @ 1010: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 1010: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 1015: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 1 
+
+UVM_INFO drv_pkt.sv(61) @ 1015: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is fade 
+
+UVM_INFO drv_pkt.sv(62) @ 1015: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 1015: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(19) @ 1015: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 1025: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 1025: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] --------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                              
+--------------------------------------------------------------------------------------------------
+req                            pkt       -     @1065                                              
+  saddr                        integral  16    'hd00d                                             
+  daddr                        integral  16    'h378                                              
+  data                         integral  4     'hb                                                
+  cmd                          integral  4     'h2                                                
+  rw_                          integral  1     'h0                                                
+  rst                          integral  1     'h1                                                
+  rst_time                     integral  32    'h4f37c8b7                                         
+  hold_len                     integral  32    'h1                                                
+  begin_time                   time      64    1015                                               
+  depth                        int       32    'd2                                                
+  parent sequence (name)       string    9     seq_pkt_0                                          
+  parent sequence (full name)  string    51    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0.seq_pkt_0
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0          
+--------------------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 1030: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 2 
+
+UVM_INFO drv_pkt.sv(34) @ 1030: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is d00d 
+
+UVM_INFO drv_pkt.sv(35) @ 1030: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 1030: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 1035: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 2 
+
+UVM_INFO drv_pkt.sv(43) @ 1035: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is d00d 
+
+UVM_INFO drv_pkt.sv(44) @ 1035: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 1035: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 1050: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 2 
+
+UVM_INFO drv_pkt.sv(53) @ 1050: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is d00d 
+
+UVM_INFO drv_pkt.sv(54) @ 1050: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 1050: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 1055: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 2 
+
+UVM_INFO drv_pkt.sv(61) @ 1055: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is d00d 
+
+UVM_INFO drv_pkt.sv(62) @ 1055: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 1055: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(19) @ 1055: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 1065: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 1065: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] --------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                              
+--------------------------------------------------------------------------------------------------
+req                            pkt       -     @1069                                              
+  saddr                        integral  16    'h1                                                
+  daddr                        integral  16    'h378                                              
+  data                         integral  4     'h3                                                
+  cmd                          integral  4     'h3                                                
+  rw_                          integral  1     'h1                                                
+  rst                          integral  1     'h0                                                
+  rst_time                     integral  32    'hd1525069                                         
+  hold_len                     integral  32    'h4                                                
+  begin_time                   time      64    1055                                               
+  depth                        int       32    'd2                                                
+  parent sequence (name)       string    9     seq_pkt_0                                          
+  parent sequence (full name)  string    51    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0.seq_pkt_0
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0          
+--------------------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 1070: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 3 
+
+UVM_INFO drv_pkt.sv(34) @ 1070: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 1 
+
+UVM_INFO drv_pkt.sv(35) @ 1070: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 1070: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 1075: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 3 
+
+UVM_INFO drv_pkt.sv(43) @ 1075: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 1 
+
+UVM_INFO drv_pkt.sv(44) @ 1075: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 1075: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 1120: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 3 
+
+UVM_INFO drv_pkt.sv(53) @ 1120: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 1 
+
+UVM_INFO drv_pkt.sv(54) @ 1120: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 1120: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 1125: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 3 
+
+UVM_INFO drv_pkt.sv(61) @ 1125: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 1 
+
+UVM_INFO drv_pkt.sv(62) @ 1125: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 1125: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO seq_pkt.sv(20) @ 1125: uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0@@seq_pkt_0 [XAC] in sequence body, after 1st uvm_do_with 
+UVM_INFO drv_pkt.sv(19) @ 1125: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 1135: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 1135: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] --------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                              
+--------------------------------------------------------------------------------------------------
+req                            pkt       -     @1073                                              
+  saddr                        integral  16    'h2222                                             
+  daddr                        integral  16    'hcafe                                             
+  data                         integral  4     'hc                                                
+  cmd                          integral  4     'h4                                                
+  rw_                          integral  1     'h0                                                
+  rst                          integral  1     'h0                                                
+  rst_time                     integral  32    'ha1b0528f                                         
+  hold_len                     integral  32    'h9                                                
+  begin_time                   time      64    1125                                               
+  depth                        int       32    'd2                                                
+  parent sequence (name)       string    9     seq_pkt_0                                          
+  parent sequence (full name)  string    51    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0.seq_pkt_0
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0          
+--------------------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 1140: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 4 
+
+UVM_INFO drv_pkt.sv(34) @ 1140: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 2222 
+
+UVM_INFO drv_pkt.sv(35) @ 1140: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 1140: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 1145: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 4 
+
+UVM_INFO drv_pkt.sv(43) @ 1145: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 2222 
+
+UVM_INFO drv_pkt.sv(44) @ 1145: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 1145: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 1240: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 4 
+
+UVM_INFO drv_pkt.sv(53) @ 1240: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 2222 
+
+UVM_INFO drv_pkt.sv(54) @ 1240: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 1240: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 1245: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 4 
+
+UVM_INFO drv_pkt.sv(61) @ 1245: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 2222 
+
+UVM_INFO drv_pkt.sv(62) @ 1245: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 1245: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(19) @ 1245: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 1255: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 1255: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] --------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                              
+--------------------------------------------------------------------------------------------------
+req                            pkt       -     @1077                                              
+  saddr                        integral  16    'h3333                                             
+  daddr                        integral  16    'hbeef                                             
+  data                         integral  4     'h3                                                
+  cmd                          integral  4     'h5                                                
+  rw_                          integral  1     'h0                                                
+  rst                          integral  1     'h0                                                
+  rst_time                     integral  32    'h320b67cf                                         
+  hold_len                     integral  32    'h2                                                
+  begin_time                   time      64    1245                                               
+  depth                        int       32    'd2                                                
+  parent sequence (name)       string    9     seq_pkt_0                                          
+  parent sequence (full name)  string    51    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0.seq_pkt_0
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0          
+--------------------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 1260: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 5 
+
+UVM_INFO drv_pkt.sv(34) @ 1260: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 3333 
+
+UVM_INFO drv_pkt.sv(35) @ 1260: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 1260: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 1265: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 5 
+
+UVM_INFO drv_pkt.sv(43) @ 1265: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 3333 
+
+UVM_INFO drv_pkt.sv(44) @ 1265: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 1265: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 1290: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 5 
+
+UVM_INFO drv_pkt.sv(53) @ 1290: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 3333 
+
+UVM_INFO drv_pkt.sv(54) @ 1290: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 1290: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 1295: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 5 
+
+UVM_INFO drv_pkt.sv(61) @ 1295: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 3333 
+
+UVM_INFO drv_pkt.sv(62) @ 1295: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 1295: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(19) @ 1295: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 1305: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 1305: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] --------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                              
+--------------------------------------------------------------------------------------------------
+req                            pkt       -     @1081                                              
+  saddr                        integral  16    'h4444                                             
+  daddr                        integral  16    'hfeed                                             
+  data                         integral  4     'h4                                                
+  cmd                          integral  4     'h6                                                
+  rw_                          integral  1     'h0                                                
+  rst                          integral  1     'h0                                                
+  rst_time                     integral  32    'hb2191da7                                         
+  hold_len                     integral  32    'h4                                                
+  begin_time                   time      64    1295                                               
+  depth                        int       32    'd2                                                
+  parent sequence (name)       string    9     seq_pkt_0                                          
+  parent sequence (full name)  string    51    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0.seq_pkt_0
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0          
+--------------------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 1310: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 6 
+
+UVM_INFO drv_pkt.sv(34) @ 1310: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 4444 
+
+UVM_INFO drv_pkt.sv(35) @ 1310: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 1310: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 1315: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 6 
+
+UVM_INFO drv_pkt.sv(43) @ 1315: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 4444 
+
+UVM_INFO drv_pkt.sv(44) @ 1315: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 1315: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 1360: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 6 
+
+UVM_INFO drv_pkt.sv(53) @ 1360: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 4444 
+
+UVM_INFO drv_pkt.sv(54) @ 1360: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 1360: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 1365: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 6 
+
+UVM_INFO drv_pkt.sv(61) @ 1365: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 4444 
+
+UVM_INFO drv_pkt.sv(62) @ 1365: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 1365: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(19) @ 1365: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] waiting for clk , consumed 
+UVM_INFO drv_pkt.sv(24) @ 1375: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] got clk and will be driving this to interface
+UVM_INFO drv_pkt.sv(25) @ 1375: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] --------------------------------------------------------------------------------------------------
+Name                           Type      Size  Value                                              
+--------------------------------------------------------------------------------------------------
+req                            pkt       -     @1085                                              
+  saddr                        integral  16    'h5555                                             
+  daddr                        integral  16    'hfade                                             
+  data                         integral  4     'h4                                                
+  cmd                          integral  4     'h7                                                
+  rw_                          integral  1     'h0                                                
+  rst                          integral  1     'h1                                                
+  rst_time                     integral  32    'h1c177cef                                         
+  hold_len                     integral  32    'h6                                                
+  begin_time                   time      64    1365                                               
+  depth                        int       32    'd2                                                
+  parent sequence (name)       string    9     seq_pkt_0                                          
+  parent sequence (full name)  string    51    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0.seq_pkt_0
+  sequencer                    string    41    uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0          
+--------------------------------------------------------------------------------------------------
+
+UVM_INFO drv_pkt.sv(33) @ 1380: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 7 
+
+UVM_INFO drv_pkt.sv(34) @ 1380: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 5555 
+
+UVM_INFO drv_pkt.sv(35) @ 1380: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(36) @ 1380: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 1 
+
+UVM_INFO drv_pkt.sv(42) @ 1385: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 7 
+
+UVM_INFO drv_pkt.sv(43) @ 1385: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 5555 
+
+UVM_INFO drv_pkt.sv(44) @ 1385: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(45) @ 1385: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(52) @ 1450: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 7 
+
+UVM_INFO drv_pkt.sv(53) @ 1450: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 5555 
+
+UVM_INFO drv_pkt.sv(54) @ 1450: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 1 
+
+UVM_INFO drv_pkt.sv(55) @ 1450: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO drv_pkt.sv(60) @ 1455: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] cmd is 7 
+
+UVM_INFO drv_pkt.sv(61) @ 1455: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] saddr is 5555 
+
+UVM_INFO drv_pkt.sv(62) @ 1455: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] done is 0 
+
+UVM_INFO drv_pkt.sv(63) @ 1455: uvm_test_top.env_0.agent_pkt_0.drv_pkt_0 [CMD Driver] en is 0 
+
+UVM_INFO seq_pkt.sv(44) @ 1455: uvm_test_top.env_0.agent_pkt_0.seqr_pkt_0@@seq_pkt_0 [XAC] seq_pkt::post_start
+UVM_INFO seq_rst.sv(41) @ 1455: uvm_test_top.env_0.agent_rst_0.seqr_rst_0@@seq_rst_0 [XAC] seq_rst::pre_start
+UVM_INFO seq_rst.sv(14) @ 1455: uvm_test_top.env_0.agent_rst_0.seqr_rst_0@@seq_rst_0 [XAC] in rst sequence sequence body
+UVM_INFO drv_rst.sv(23) @ 1455: uvm_test_top.env_0.agent_rst_0.drv_rst_0 [RST Driver] waiting for clk
+UVM_INFO drv_rst.sv(31) @ 1475: uvm_test_top.env_0.agent_rst_0.drv_rst_0 [RST Driver] rst_ is 0 
+
+UVM_INFO drv_rst.sv(37) @ 1505: uvm_test_top.env_0.agent_rst_0.drv_rst_0 [RST Driver] rst_ is 1 
+
+UVM_INFO seq_rst.sv(49) @ 1505: uvm_test_top.env_0.agent_rst_0.seqr_rst_0@@seq_rst_0 [XAC] seq_rst::post_start
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  328
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[CMD Driver]   304
+[RNTST]     1
+[RST Driver]     7
+[XAC]    16
+$finish called from file "/usr/synopsys/vcs/U-2023.03-SP2/etc/uvm-1.1/base/uvm_root.svh", line 437.
+$finish at simulation time                 1505
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1505
+CPU Time:      0.510 seconds;       Data structure size:   0.6Mb
+Wed Jun 26 10:11:58 2024

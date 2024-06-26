@@ -1,2 +1,10 @@
-Command Line: /usr/synopsys/verdi/U-2023.03-SP2-2/platform/LINUXAMD64/bin/Novas
+Command Line: /synopsys/current/verdi/platform/LINUXAMD64/bin/Novas
 uname(Linux VLSI04.ucsc-extension.edu 3.10.0-1160.105.1.el7.x86_64 #1 SMP Mon Nov 6 06:58:51 EST 2023 x86_64)
+[MessageBox] The KDB has been updated by other processes. Reload the KDB to update it; otherwise, you may get unexpected results.
+type= DS_SCOPE element= 1 field= 1
+VERILOG top
+VERILOG intf_bus_0
+-----
+second field= DebussyLib
+third field= intf_simple_bus
+Signal SIGHUP is received. Shutting down...

@@ -13,6 +13,7 @@ top.v
 
 simv \
 -l simv.log \
-+UVM_VERBOSITY=HIGH \
-+UVM_TESTNAME=testcase1 
++UVM_VERBOSITY=LOW \
++UVM_CONFIG_DB_TRACE \
++UVM_TESTNAME=testcase1  
 # +UVM_OBJECTION_TRACE \
